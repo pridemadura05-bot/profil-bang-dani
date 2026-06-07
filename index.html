@@ -26,16 +26,22 @@
     }
 
     img {
-        display: block;
-        margin: 20px auto;
-        width: 150px;       
-        height: 150px;      
-        border-radius: 50%; 
-        border: 4px solid #0284c7; 
-        object-fit: cover;   
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 30px auto;
+    width: 150px;       
+    height: 150px;      
+    border-radius: 50%; 
+    object-fit: cover;  
+    
+    /* Bingkai utama warna biru langit */
+    border: 5px solid #0284c7; 
+    
+    /* Trik CSS untuk memberikan efek bayangan bersinar warna oranye petir */
+    box-shadow: 0 0 20px #f97316, 0 8px 16px rgba(0, 0, 0, 0.2);
+    
+    position: relative;
     }
-
+        
     p {
     color: #0f172a; 
     max-width: 400px;
@@ -78,9 +84,13 @@ ul {
 
     <!-- Judul -->
     <h1>Profil Diri</h1>
-
-    <!-- Gambar Foto Diri -->
-    <img src="IMG_20251222_125315_927.webp" alt="Foto Diri" width="200">
+<!-- Bagian Foto Diri dengan Hiasan Emoji di Sekelilingnya -->
+<div style="text-align: center; font-size: 1.8rem; margin: 20px 0;">
+     👻 👻
+    <img src="foto-saya.jpg" alt="Foto Diri">
+    👻 👻
+</div>
+    
 
     <!-- Paragraf Deskripsi Diri -->
     <p>
