@@ -7,8 +7,8 @@
     <style>
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #0f172a; /* Warna latar belakang hitam kebiruan gelap */
-        color: #ffffff; /* Warna teks putih */
+        background-color: #f1f5f9; /* Warna latar belakang abu-abu cerah, bersih, dan modern */
+        color: #1e293b; /* Warna teks gelap agar mudah dibaca */
         margin: 0;
         padding: 20px;
         display: flex;
@@ -19,47 +19,50 @@
     }
 
     h1, h2, h3 {
-        color: #38bdf8; /* Warna judul biru muda cerah */
+        color: #0284c7; /* Warna judul biru cerah yang segar */
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 1px;
     }
 
+    /* Mengunci ukuran foto agar bulat sempurna dan tidak lonjong */
+    img {
+        display: block;
+        margin: 20px auto;
+        width: 150px;       /* Dikunci lebar 150 pixel */
+        height: 150px;      /* Dikunci tinggi 150 pixel */
+        border-radius: 50%; /* Membuat bulat murni */
+        border: 4px solid #0284c7; /* Garis bingkai biru cerah */
+        object-fit: cover;  /* Memotong foto secara otomatis agar pas di dalam lingkaran */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
     p {
-        color: #94a3b8; /* Warna paragraf abu-abu halus */
+        color: #334155;
         max-width: 400px;
         text-align: center;
         line-height: 1.6;
         font-style: italic;
-        background-color: #1e293b; /* Kotak latar belakang tulisan */
+        background-color: #ffffff; /* Kotak deskripsi warna putih bersih */
         padding: 15px;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    img {
-        display: block;
-        margin: 20px auto;
-        border-radius: 50%; /* Membuat foto berbentuk lingkaran murni */
-        border: 4px solid #38bdf8; /* Garis bingkai biru di foto */
-        object-fit: cover;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     }
 
     ul {
         list-style: none;
         padding: 20px;
-        background-color: #1e293b; /* Kotak latar belakang biodata */
+        background-color: #ffffff; /* Kotak biodata warna putih bersih */
         border-radius: 15px;
         max-width: 350px;
         width: 100%;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     }
 
     li {
         padding: 10px 0;
-        border-bottom: 1px solid #334155;
-        color: #cbd5e1;
+        border-bottom: 1px solid #e2e8f0;
+        color: #475569;
     }
 
     li:last-child {
@@ -67,9 +70,9 @@
     }
 
     strong {
-        color: #38bdf8;
+        color: #0284c7;
     }
-    </style>
+        </style>
     
 </head>
 <body>
